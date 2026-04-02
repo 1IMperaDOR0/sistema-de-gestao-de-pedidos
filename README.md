@@ -126,7 +126,7 @@ O sistema foi projetado considerando eficiência computacional:
 | Etapa                 | Complexidade      |
 | --------------------- | ----------------- |
 | Leitura de dados      | O(n)              |
-| Transformações |        | O(n)              |
+| Transformações        | O(n)              |
 | Cálculo de prioridade | O(n)              |
 | Ordenação             | **O(n log n)**    |
 | Fila (`deque`)        | O(1) por operação |
