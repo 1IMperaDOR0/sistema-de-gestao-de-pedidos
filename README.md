@@ -33,7 +33,7 @@ O foco principal é aplicar, na prática:
   * **pandas** (manipulação de dados)
   * **matplotlib** (visualização)
   * **collections.deque** (estrutura de fila)
-* Interface: **terminal | (CLI)**
+* Interface: **terminal (CLI)**
 
 ---
 
@@ -44,7 +44,7 @@ O foco principal é aplicar, na prática:
 * Carrega dados a partir de um arquivo CSV
 * Trata erro de caminho inválido com nova solicitação ao usuário
 
-### 🔄 Transformação | de dados
+### 🔄 Transformação de dados
 
 * Converte `DataFrame` → lista → tuplas
 * Organiza pedidos em um dicionário para acesso rápido por ID
