@@ -79,8 +79,8 @@ Cada pedido recebe um **score de prioridade** baseado em:
 
 ### Estruturas de dados utilizadas
 
-* **DataFrame** → armazenamento | inicial dos dados
-* **Lista** → manipulação intermediária |
+* **DataFrame** → armazenamento inicial dos dados
+* **Lista** → manipulação intermediária
 * **Tuplas** → representação imutável dos pedidos
 * **Dicionário** → organização por ID
 * **Deque** → simulação de fila
