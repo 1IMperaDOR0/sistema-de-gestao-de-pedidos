@@ -10,8 +10,13 @@ from collections import deque
 
 # Função responsável por carregar os dados do arquivo CSV
 def carregar_dados(caminho):
-    df = pd.read_csv(caminho)
-    return df
+    try:
+        df = pd.read_csv(caminho)
+        return df
+    except FileNotFoundError:
+        print("Caminho inválido!")
+        novo_caminho = input("Digite o caminho correto do csv: ")
+        return carregar_dados(novo_caminho)  # Chamada recursiva
 
 
 # Função que transforma o DataFrame em uma lista
@@ -28,8 +33,8 @@ def lista_para_tuplas(lista):
 def criar_dicionario(lista_pedidos):
     dicionario = {}
 
-    for i, pedido in enumerate(lista_pedidos):
-        id_pedido = i + 1
+    for pedido in lista_pedidos:
+        id_pedido = pedido[0]
 
         dicionario[id_pedido] = {
             "cidade_destino": pedido[1],
